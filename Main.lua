@@ -1,3 +1,5 @@
+-- MAKE SURE TO PUT THE SCRIPT IN AUTOEXEC FOLDER OTHERWISE YOU WILL FREEZE DUE TO DEEPWOKENS UWP DETECTION
+
 --[[Place IDs:
 THE DEPTHS : 5735553160
 ETREAN LUMINANT : 6032399813
@@ -9,11 +11,12 @@ setclipboard(game.JobId) <— execute to copy current jobid
 -- TODO: LOG # OF PLAYERS IN SERVER TOO IN SERVERAGE FILTER | JOIN SMALLEST SERVER IN REGION OPTION | SLOT TO JOIN ON WITH DROPDOWN
 
 if game.PlaceId == 4111023553 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/UWP-Detection-Bypass/main/Protected_6902974095357315.lua"))()
  pcall(function()
  local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
  
  local Window = OrionLib:MakeWindow({Name = "Deepwoken Server Sniper", HidePremium = true, SaveConfig = false, ConfigFolder = "OrionTest", IntroEnabled = false, IntroText = false})
- 
+
  -- Values
  _G.JobID = JobID
  _G.serverAge = ""
@@ -73,7 +76,7 @@ if game.PlaceId == 4111023553 then
      end
  end
  
- 
+
  -- UI
  OrionLib:MakeNotification({
      Name = "Reminder",
@@ -109,8 +112,7 @@ if game.PlaceId == 4111023553 then
      TextDisappear = true,
      Callback = function(Value)
          _G.serverAge = Value
-         -- warn("Server age selected:")
-         -- warn(_G.serverAge)
+         -- warn("Server age selected: " .. _G.serverAge)
          OrionLib:MakeNotification({
              Name = "Server Age Selected",
              Content = _G.serverAge,
@@ -171,7 +173,7 @@ if game.PlaceId == 4111023553 then
  Tab:AddButton({
      Name = "The Depths",
      Callback = function()
-               setclipboard("5735553160")
+            setclipboard("5735553160")
              OrionLib:MakeNotification({
              Name = "Status",
              Content = "The Depths Place ID copied to clipboard!",
