@@ -106,8 +106,7 @@ Tab:AddTextbox({
 	TextDisappear = false,
 	Callback = function(Value)
         _G.serverAge = Value
-        -- warn("Server age selected:")
-        -- warn(_G.serverAge)
+        --warn("Server age selected: " .. _G.serverAge)
         OrionLib:MakeNotification({
             Name = "Server Age Selected",
             Content = _G.serverAge,
