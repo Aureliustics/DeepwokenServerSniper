@@ -9,7 +9,7 @@ if game.PlaceId == 4111023553 then
 pcall(function()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Deepwoken Server Sniper", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Deepwoken Server Sniper", HidePremium = true, SaveConfig = false, ConfigFolder = "OrionTest", IntroEnabled = false, IntroText = false})
 
 -- Values
 _G.JobID = JobID
