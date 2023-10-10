@@ -124,7 +124,7 @@ end
  -- UI
  OrionLib:MakeNotification({
      Name = "Reminder",
-     Content = "Make sure you choose a slot before sniping server.",
+     Content = "Make sure you choose what slot you want to join on.",
      Image = "rbxassetid://4483345998",
      Time = 9e9
  })
