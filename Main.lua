@@ -127,7 +127,7 @@ local function filterServers()
 end
 
 local function repeatJoin()
-    if _G.JobID ~= nil or _G.JobID == "" then
+    if _G.JobID ~= nil and _G.JobID ~= "" and _G.JobID ~= " " and _G.JobID ~= "Input" then
         while _G.repeatJoin == true do
             local RL = game:GetService("ReplicatedStorage")
             local Req = RL.Requests
