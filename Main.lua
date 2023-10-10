@@ -1,4 +1,4 @@
--- MAKE SURE TO PUT THE SCRIPT IN AUTOEXEC FOLDER OTHERWISE YOU WILL FREEZE DUE TO DEEPWOKENS UWP DETECTION
+-- MAKE SURE TO PUT THIS IN AUTOEXEC FOLDER SO YOU WONT FREEZE: loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/UWP-Detection-Bypass/main/Protected_6902974095357315.lua"))()
 
 --[[Place IDs:
 THE DEPTHS : 5735553160
@@ -8,10 +8,7 @@ EASTERN LUMINANT : 6473861193
 setclipboard(game.JobId) <— execute to copy current jobid
 --]]
 
--- TODO: LOG # OF PLAYERS IN SERVER TOO IN SERVERAGE FILTER | JOIN SMALLEST SERVER IN REGION OPTION | SLOT TO JOIN ON WITH DROPDOWN
-
 if game.PlaceId == 4111023553 then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/UWP-Detection-Bypass/main/Protected_6902974095357315.lua"))()
  pcall(function()
  local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
  
@@ -20,10 +17,56 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/UWP-Dete
  -- Values
  _G.JobID = JobID
  _G.serverAge = ""
+ _G.joinSlot = ""
+ local pg = game.Players.LocalPlayer.PlayerGui
  
  local function checkValidity()
      _G.CharLength = _G.JobID
  end
+
+ local function click(button)
+    for i,v in pairs(getconnections(button.MouseButton1Click)) do
+        v:Fire()
+    end
+end
+
+local Slots = {
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+}
+
+local function selectSlot()
+    keypress(0x46)
+    task.wait(0.3)
+    click(pg.LoadingGui.Overlay.Options.Option)
+    task.wait(1)
+    click(pg.LoadingGui.Overlay.Slots.A)
+    task.wait(1)
+end
  
  local function joinServer()
      checkValidity()
@@ -34,6 +77,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/UWP-Dete
          Image = "rbxassetid://4483345998",
          Time = 15
      })
+     selectSlot()
      local RL = game:GetService("ReplicatedStorage")
      local Req = RL.Requests
      local SM = Req.StartMenu
@@ -123,6 +167,24 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/UWP-Dete
          task.wait(20)
      end
  })
+
+ Tab:AddDropdown({
+	Name = "Slot To Join",
+	Default = "A",
+	Options = Slots,
+	Callback = function(Value)
+        _G.joinSlot = Value
+        if Slots[string.upper(Value)] then
+            _G.joinSlot = string.upper(Value);
+        end
+        OrionLib:MakeNotification({
+            Name = "Status",
+            Content = "Selected Slot: " .. _G.joinSlot,
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
+	end    
+})
  
  Tab:AddParagraph("Credits:","@aureliustics_")
  
