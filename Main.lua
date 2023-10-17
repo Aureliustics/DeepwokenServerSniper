@@ -108,7 +108,7 @@ local function filterServers()
                     print(v.Parent.RichName.Value);
                 OrionLib:MakeNotification({
                     Name = "Status",
-                    Content = "Server Detected:  " .. v.Parent.RichName.Value .. " " .. v.Parent.Region.Value .. " " .. _G.serverAge,
+                    Content = "Server Detected:  " .. v.Parent.RichName.Value .. " " .. v.Parent.Region.Value .. " " .. v.Parent.Age.Value,
                     Image = "rbxassetid://4483345998",
                     Time = 9e9
                 })
@@ -159,7 +159,7 @@ OrionLib:MakeNotification({
 local SNIPER = Window:MakeTab({
 	Name = "Sniper",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+	PremiumOnly = false 
 })
 
 
