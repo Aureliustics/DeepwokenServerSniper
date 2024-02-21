@@ -211,7 +211,7 @@ SNIPER:AddDropdown({
 })
 
 
-SNIPER:AddParagraph("Credits:","@aureliustics_")
+SNIPER:AddParagraph("Credits:","@aureliustics")
 
 SNIPER:AddButton({
 	Name = "Unload",
