@@ -40,7 +40,8 @@
 <br>
 <br>
 
-## Copy the loadstring:
+<h2 ALIGN="CENTER">Copy the loadstring:</h2>
+
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/DeepwokenServerSniper/main/Main.lua"))()
 ```
