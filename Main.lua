@@ -1,4 +1,4 @@
--- MAKE SURE TO PUT THIS IN AUTOEXEC FOLDER SO YOU WONT FREEZE: loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/UWP-Detection-Bypass/main/Protected_6902974095357315.lua"))()
+-- (NO LONGER NEEDED, USE KRAMPUS FOR EXECUTOR!) MAKE SURE TO PUT THIS IN AUTOEXEC FOLDER SO YOU WONT FREEZE: loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/UWP-Detection-Bypass/main/Protected_6902974095357315.lua"))()
 
 --[[Place IDs:
 THE DEPTHS : 5735553160
@@ -20,6 +20,7 @@ _G.serverAge = ""
 local pg = game.Players.LocalPlayer.PlayerGui
 _G.joinSlot = ""
 _G.repeatJoin = true
+local startTime = os.clock()
 
 local function checkValidity()
     _G.CharLength = _G.JobID
@@ -306,7 +307,16 @@ PLACEID:AddButton({
   	end    
 })
 
-OrionLib:Init()
+local endTime = os.clock()
+local loadTime = endTime - startTime
 
-    end,warn);
+OrionLib:MakeNotification({
+	Name = "Script Loaded!",
+	Content = string.format("Sniper successfully loaded in %.2f seconds", loadTime),
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+end, warn);
+OrionLib:Init()
 end
