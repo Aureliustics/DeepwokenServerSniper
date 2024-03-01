@@ -1,5 +1,4 @@
 <h2 ALIGN="CENTER">Features:</h2> <br>
-<hr>
 <table ALIGN="CENTER">
   <tr>
     <th>Features</th>
