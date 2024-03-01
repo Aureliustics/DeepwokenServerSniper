@@ -1,8 +1,5 @@
-<h1 ALIGN="CENTER"> DeepwokenServerSniper <h1>
 <h2 ALIGN="CENTER">Features:</h2> <br>
 <hr>
-
-
 <table ALIGN="CENTER">
   <tr>
     <th>Feature</th>
