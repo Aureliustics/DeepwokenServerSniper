@@ -31,7 +31,7 @@
     <td>🟢WORKING</td>
   </tr>
   <tr>
-    <td>interval between retrys slider 1s-20s</td>
+    <td>Interval between retrys slider 1s-20s</td>
     <td>🟢WORKING</td>
   </tr>
 </table>
