@@ -2,7 +2,7 @@
 <hr>
 <table ALIGN="CENTER">
   <tr>
-    <th>Feature</th>
+    <th>Features</th>
     <th>Status</th>
   </tr>
   
@@ -15,7 +15,7 @@
     <td>🟢WORKING</td>
   </tr>
   <tr>
-    <td>Copy all placeids on Deepwoken</td>
+    <td>Copy all placeIDs on Deepwoken</td>
     <td>🟢WORKING</td>
   </tr>
   <tr>
