@@ -1,5 +1,3 @@
-# Deepwoken Server Sniper
-
 <h2 ALIGN="CENTER">Features:</h2> <br>
 <hr>
 <table ALIGN="CENTER">
@@ -37,3 +35,13 @@
     <td>🟢WORKING</td>
   </tr>
 </table>
+
+<br>
+<br>
+<br>
+<br>
+
+## Copy the loadstring:
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/DeepwokenServerSniper/main/Main.lua"))()
+```
