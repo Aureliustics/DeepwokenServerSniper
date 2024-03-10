@@ -71,8 +71,12 @@ local function selectSlot()
     task.wait(0.3)
     click(pg.LoadingGui.Overlay.Options.Option)
     task.wait(1)
-    click(pg.LoadingGui.Overlay.Slots.A) -- Change this to whatever slot u want (A, B, C, D, ect)
-    task.wait(1)
+    game.ReplicatedStorage.Requests.StartMenu.Start:FireServer(_G.joinSlot, {
+        PrivateTest = false
+    });
+    task.wait(0.5);
+    game.ReplicatedStorage.Requests.StartMenu.PickServer:FireServer(_G.JobID);
+    task.wait(0.5)
 end
 
 local function joinServer()
