@@ -66,7 +66,7 @@ local Slots = {
     "Z",
 }
 
-local function selectSlot()
+local function join()
     keypress(0x46)
     task.wait(0.3)
     click(pg.LoadingGui.Overlay.Options.Option)
@@ -88,12 +88,7 @@ local function joinServer()
         Image = "rbxassetid://4483345998",
         Time = 15
     })
-    selectSlot()
-    local RL = game:GetService("ReplicatedStorage")
-    local Req = RL.Requests
-    local SM = Req.StartMenu
-    local PS = SM.PickServer
-    PS:FireServer(_G.JobID)
+    join()
     else
         OrionLib:MakeNotification({
             Name = "Error",
