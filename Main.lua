@@ -134,7 +134,7 @@ local function repeatJoin()
             local SM = Req.StartMenu
             local PS = SM.PickServer
             PS:FireServer(_G.JobID)
-            GuiService:ClearError()
+            game:GetService("GuiService"):ClearError();
             attempts = attempts + 1
             OrionLib:MakeNotification({
                 Name = "Status",
