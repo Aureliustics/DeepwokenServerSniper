@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <td>Select slot dropdown A-Z (Too lazy to fix)</td>
-    <td>🟡BROKEN</td>
+    <td>🟢WORKING</td>
   </tr>
   <tr>
     <td>Auto select slot upon sniping server</td>
