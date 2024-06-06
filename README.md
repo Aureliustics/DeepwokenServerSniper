@@ -31,7 +31,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/Deepwoke
     <td>🟢WORKING</td>
   </tr>
   <tr>
-    <td>Select slot dropdown A-Z (Too lazy to fix)</td>
+    <td>Select slot dropdown A-Z</td>
     <td>🟢WORKING</td>
   </tr>
   <tr>
