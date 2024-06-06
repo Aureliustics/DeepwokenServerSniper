@@ -1,4 +1,4 @@
-<h2>Use Krampus/RO-EXEC to execute the script</h2>
+<h2>Paste the loadstring into your executor</h2>
 <br>
 <h2>Copy the loadstring:</h2>
 
