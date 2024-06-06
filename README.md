@@ -46,8 +46,3 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Aureliustics/Deepwoke
     <td>🟢WORKING</td>
   </tr>
 </table>
-
-<br>
-<br>
-<br>
-<br>
