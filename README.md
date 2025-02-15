@@ -1,4 +1,8 @@
 <h2>Paste the loadstring into your executor</h2>
+<ul>
+  <li>A JobID is a unique identifier for servers on Roblox.</li>
+  <li>You can find someones JobID by using <a href="https://github.com/ic3w0lf22/Roblox-Account-Manager" target="_blank">Roblox Alt Manager</a> -> Utilities</li>
+</ul>
 <br>
 <h2>Copy the loadstring:</h2>
 
